@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Рогулев](https://up.htmlacademy.ru/htmlcss/23/user/771609).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/artyglitch).
 
 ---
 
