@@ -2,10 +2,62 @@ body {
     margin: 0px;
     padding: 0px;
 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight: 700;
-    color: ;
+    font-weight: 400;
+    color: #000000;
     text-transform: uppercase;
+    
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation,
+.page-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: bold;
+    }
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #c1c1c1;
+}
+
+.page-navigation .visitor {
+    color: #766357;
+}
+
+.welcome {
+    background-image:url(../img/background/backgroundphoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 780px;
+    margin-top: -70px;
+    
+}
+
+.poster {
+    position: relative;
+   
 }
