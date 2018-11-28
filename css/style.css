@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    width: 1200px;
 
     font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 14px;
@@ -53,11 +54,156 @@ a {
     background-position: center;
     width: 1200px;
     height: 780px;
-    margin-top: -70px;
-    
+  }
+
+.welcome::after{
+  
 }
 
 .poster {
     position: relative;
+    text-align: center;
+}
+
+.advantages {
+    background-color: #ffffff;
+    text-align: center;
    
 }
+
+.advantages h2 {
+    
+}
+
+.advantages p {
+    
+}
+
+.search {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.search .search-hotel {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    background-color: #766357;
+    color: #ffffff;
+}
+
+.search .search-hotel:hover,
+.search .search-hotel:focus {
+    background-color: #604e43;
+}
+
+.search .search-hotel:active {
+    background-color: #503e33; 
+    color: #857871;
+}
+
+.pop-up-search {
+    display: none;
+}
+
+.main-footer,
+.page-footer {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.visit {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.social-footer {
+    text-align: center;
+    list-style: none;
+}
+
+.academy .logo-htmlacademy {
+    background-image: url("../img/content/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hotel-block {
+    background-color: #ffffff; 
+}
+
+.hotel-block li {
+    list-style: none;
+}
+
+.hotel-block .link-hotel{
+    color: #000000;
+}
+
+.hotel-block .link-hotel:hover,
+.hotel-block .link-hotel:focus {
+    color: #81b3d2
+}
+
+.hotel-block .link-hotel:active {
+    color: #b2b2b2;
+}
+
+.hotel-block .more {
+    font-weight: bold;
+    color:white;
+    background-color: #81b3d2;
+}
+
+.hotel-block .more:hover,
+.hotel-block .more:focus  {
+    background-color: #669ec0;
+    color: #ffffff;
+}
+
+.hotel-block .more:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+
+
+.hotel-block .reserve {
+    font-weight: bold;
+    color:white;
+    background-color: #766357;
+}
+
+.hotel-block .reserve:hover,
+.hotel-block .reserve:focus {
+    color: #ffffff;
+    background-color: #604e43;
+}
+
+.hotel-block .reserve:active {
+    color: #857871;
+    background-color: #503e33;
+}
+
+.rating {
+    background-color: #f2f2f2;
+}
+
+.star {
+    background-image: url(../img/icon/star.svg);
+    background-repeat: space; 
+    height: 20px;
+    width: 90px;
+} /*загвоздка с расстоянием между звездами и их количеством */
