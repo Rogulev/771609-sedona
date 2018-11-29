@@ -2,7 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <!-- Правильный порядок подключения -->
+    <!-- Сначала шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+     rel="stylesheet">
+    <!-- Потом normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- А затем уже главный стилевой файл -->
     <link rel="stylesheet" href="css/style.css">
+    
+    
+    <!-- Неправильный порядок подключения -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
      rel="stylesheet">
     <title>HTML Academy: Седона</title>
@@ -85,7 +95,9 @@
         </ul>
 
       <div class="academy"> 
-        <p class="Website">Website by</p> 
+        <p class="Website">Website by</p>
+        <!-- Пустая ссылка, она не должна быть пустой -->
+        <!-- В этой ссылке должна лежать SVG иконка -->
         <a href="https://htmlacademy.ru/"></a>
         </div>
     </footer>
