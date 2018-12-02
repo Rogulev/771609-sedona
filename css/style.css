@@ -2,6 +2,9 @@ body {
     margin: 0px;
     padding: 0px;
     width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+    
 
     font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 14px;
@@ -13,21 +16,56 @@ body {
     background-color: #f2f2f2;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.main-heder, 
+.page-heder {
+    margin-bottom: 0px;
+    min-height: 55px;
+}
+
+
 a {
     text-decoration: none;
-}
+    color: #000000;
+}    
+
 
 .main-navigation,
 .page-navigation {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-
     background-color: #ffffff;
 }
 
-.site-navigation {
+
+.main-logo {
+    position: absolute;
+    width: 141px;
+    height: 71px;
+    left: 50%;
+    margin-left: -69px;
+    }
+
+.site-navigation { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 0px;        
+    padding-bottom: 14px;
+    line-height: 26px;
+    font-weight: bold;
     list-style: none;
+}
+
+.site-navigation>li {
+    width: 240px;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -44,20 +82,17 @@ a {
     color: #c1c1c1;
 }
 
-.page-navigation .visitor {
+.page-navigation .current {
     color: #766357;
 }
 
 .welcome {
+    
     background-image:url(../img/background/backgroundphoto.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     width: 1200px;
-    height: 780px;
-  }
-
-.welcome::after{
-  
+    height: 508px;
+    
 }
 
 .poster {
@@ -69,14 +104,6 @@ a {
     background-color: #ffffff;
     text-align: center;
    
-}
-
-.advantages h2 {
-    
-}
-
-.advantages p {
-    
 }
 
 .search {
@@ -122,20 +149,12 @@ a {
     list-style: none;
 }
 
-.academy .logo-htmlacademy {
-    background-image: url("../img/content/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-}
 
 
-
-
-
-
-
+#logo_name:hover,
+#logo_name:focus {
+    fill: #5496bd;
+   }
 
 
 
@@ -202,8 +221,22 @@ a {
 }
 
 .star {
-    background-image: url(../img/icon/star.svg);
-    background-repeat: space; 
-    height: 20px;
-    width: 90px;
+    background-image: url("../img/icon/star.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px; 
+    display: block;
 } /*загвоздка с расстоянием между звездами и их количеством */
+
+
+.logo-academy {
+    fill: #000000;
+}
+.logo-academy:hover,
+.logo-academy:focus {
+    fill: #81b3d2;
+}
+
+.logo-academy:active {
+    fill: #bdbbbc;
+}
