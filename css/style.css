@@ -87,23 +87,43 @@ a {
 }
 
 .welcome {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image:url(../img/background/backgroundphoto.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    height: 508px;
+    height: 723px;
+    background-position: center -50px;
+    
     
 }
 
 .poster {
-    position: relative;
+    margin-top: 76px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
+
+
 .advantages {
+    padding-top:60px;
+    padding-bottom: 13px; 
     background-color: #ffffff;
     text-align: center;
-   
+    height: 210px;
+    
+    
+}
+
+.advantages h2 {
+    margin-top: 0px;
+}
+
+.advantages h2 p {
+    padding-top: 35px;
+    margin-top: 0px;
 }
 
 .search {
@@ -135,20 +155,35 @@ a {
 
 .main-footer,
 .page-footer {
-    background-color: rgba(255, 255, 255, 0.9)
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 0px;
 }
+
 
 .visit {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    margin: 0px;
+    margin-right: 250px;
+    margin-left: 130px;
+    
+}
+.social-footer {
+    width: 150px;
 }
 
-.social-footer {
+.social-footer ul {
     text-align: center;
     list-style: none;
 }
 
+.academy-footer {
+    width: 200px;
+    margin: 0px;
+    margin-left: auto;
+}
 
 
 #logo_name:hover,
@@ -227,6 +262,9 @@ a {
     height: 20px; 
     display: block;
 } /*загвоздка с расстоянием между звездами и их количеством */
+
+
+
 
 
 .logo-academy {
