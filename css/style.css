@@ -4,7 +4,7 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right:auto;
-    
+     
 
     font-family: 'PT Sans', "Arial", sans-serif;
     font-size: 14px;
@@ -94,7 +94,7 @@ a {
 .welcome {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     background-image:url(../img/background/backgroundphoto.jpg);
     background-repeat: no-repeat;
     width: 1200px;
@@ -106,8 +106,21 @@ a {
 
 .poster {
     margin-top: 76px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: center;
+}
+
+
+.poster::after {
+    background-image: url("../img/icon/polygon.png");
+    background-repeat: no-repeat; 
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 59px;
+    margin-top: 25px; 
+    margin-bottom: -1px;
+        
 }
 
 
