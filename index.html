@@ -44,37 +44,36 @@
         <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения
            гостиниц в Седоне </p>
         <a href="#" class="search-hotel" title="Поиск Гостиницы">Поиск гостиницы в Седоне</a>
-        </article>
+      </article>
 
       <section class="pop-up-search">
         <form action="https://echo.htmlacademy.ru/" method="post" class="hotel-search">
-          <div class="check-date">
-             <label>Дата заезда: 
-             <input name="check-date" type="text" placeholder="24 апреля 2017">
-            </label>
-          </div>
+          <p class="check-date">
+             <label for="check-date">Дата заезда:</label>
+             <input name="check-date" type="text" value="24 апреля 2017" class="check-input">
+             <a href="#" class="calendar"><span class="calendar-icon"></span></a>
+          </p>
 
-          <div class="check-out">
-             <label>Дата выезда:
-             <input name="check-out" type="text" placeholder="2 июля 2017">
-            </label>
-          </div>
-          
-          <div class="people">
+          <p class="check-out">
+             <label for="check-out">Дата выезда:<a href="#" class="calendar"><span class="calendar-icon"></span></a></label>
+             <input name="check-out" type="text" value="2 июля 2017" class="check-input">
+          </p>
+                    
+          <p class="people">
             <label for="amount-adult"> Взрослые:</label>
             <button type="button" name="minus-adult" class="minus">-</button>
-            <input id="amount-adult" type="text" name="amount-adult" placeholder="2">
+            <input id="amount-adult" type="text" name="amount-adult" value="2" class="number-people">
             <button type="button" name="plus-adult" class="plus">+</button>
-            
+          </p>  
           
 
-          
+          <p class="people">
             <label for="amount-children"> Дети:</label>
             <button type="button" name="minus-child" class="minus"><span>-</span></button>
-            <input id="amount-children" type="text" name="amount-children"  placeholder="0">
+            <input id="amount-children" type="text" name="amount-children"  value="0" class="number-people">
             <button type="button" name="plus-child" class="plus"><span>+</span></button>
-          </div>
-           <button type="submit" class="blue-button">Найти</button>
+          </p>
+          <button type="submit" class="blue-button">Найти</button>
         </form>
       </section>
     </main>
