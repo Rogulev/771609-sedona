@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    width: 1200px;
+    min-width: 1200px;
     margin-left: auto;
     margin-right:auto;
      
@@ -16,6 +16,13 @@ body {
     background-color: #f2f2f2;
 }
 
+.wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+     
+}
+
 .visually-hidden {
     visibility: hidden;
     font-size: 0;
@@ -25,8 +32,9 @@ body {
     height: 1px;
 }
 
-.main-heder, 
-.page-heder {
+.main-heder {
+    position: relative;
+    align-items: center;
     margin-bottom: 0px;
     min-height: 55px;
 }
@@ -38,25 +46,31 @@ a {
 }    
 
 
-.main-navigation,
-.page-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
-    background-color: #ffffff;
-}
-
 
 .main-logo {
     position: absolute;
     width: 141px;
     height: 71px;
-    left: 50%;
-    margin-left: -69px;
-    }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+   
+}
 
-.site-navigation { 
+.main-logo a{
+    display: block;
+    width: 140px;
+    height: 71px;
+    background-image: url("../img/content/logo-sedona.svg");
+    
+}
+
+
+.main-navigation ul { 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
@@ -66,62 +80,75 @@ a {
     line-height: 26px;
     font-weight: bold;
     list-style: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
-.site-navigation>li {
-    width: 240px;
-    text-align: center;
+
+
+.main-navigation ul>li {
+    width: 20%;
+    box-sizing: border-box;
 }
 
-.site-navigation a {
+.main-navigation li:nth-child(4n) {
+    margin-right: 6%;
+    text-align: right;
+  }
+
+  .main-navigation li:nth-child(4n+1) {
+    margin-left: 6%;
+  }
+
+  .main-navigation li:nth-child(4n+3) {
+    margin-left: 8%;
+    text-align: right;
+  }
+
+
+.main-navigation a {
     color: #000000;
     font-weight: bold;
     }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.main-navigation a:hover,
+.main-navigation a:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:active {
+.main-navigation a:active {
     color: #c1c1c1;
 }
 
-.page-navigation .current {
+.main-navigation .current {
     color: #766357;
 }
 
 .welcome {
-    display: flex;
-    flex-direction: column;
-    
-    background-image:url(../img/background/backgroundphoto.jpg);
+    background-image:url(../img/background/backgroundphoto2.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    height: 723px;
-    background-position: center -50px;
-    
+    height: 510px;
     
 }
 
 .poster {
-    margin-top: 76px;
+    padding-top: 76px;
     margin-bottom: 0px;
     text-align: center;
-    width: 1200px;
+    
 }
 
-
-.poster::after {
-    background-image: url("../img/icon/polygon.png");
+.welcome::after{
+    background-image: url("../img/icon/polygon.svg");
     background-repeat: no-repeat; 
-    content: "";
     display: block;
+    content: "";
     width: 1200px;
     height: 59px;
-    margin-top: 25px; 
-    margin-bottom: -1px;
-        
+    position: absolute;     
 }
 
 
@@ -341,8 +368,7 @@ a {
     color: #88b6d1;
 }
 
-.main-footer,
-.page-footer {
+.main-footer {
     display: flex;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px 0px;
