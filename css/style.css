@@ -32,6 +32,19 @@ body {
     height: 1px;
 }
 
+.hidden {
+    position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+}
+
 .main-heder {
     position: relative;
     align-items: center;
@@ -128,7 +141,7 @@ a {
 }
 
 .welcome {
-    background-image:url(../img/background/backgroundphoto2.jpg);
+    background-image: url("../img/background/backgroundphoto2.jpg");
     background-repeat: no-repeat;
     width: 1200px;
     height: 510px;
@@ -140,12 +153,12 @@ a {
     padding-top: 76px;
     margin-bottom: 0px;
     text-align: center;
-    
 }
 
-.welcome::after{
-    background-image: url("../img/icon/polygon.svg");
+.poster::before{
+    background-image: url("../img/icon/polygon.png");
     background-repeat: no-repeat; 
+    background-size: 100.5%;
     display: block;
     content: "";
     width: 1200px;
@@ -363,33 +376,55 @@ a {
 
 .main-footer {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px 0px;
+    justify-content: space-around;
+    height: 120px;
+    padding: 0;
+    background-color: rgba(0, 255, 0, 0.9);
 }
 
 
 .visit {
+    display: flex;
+    align-items: center;
+    
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     margin: 0px;
-    margin-right: 250px;
-    margin-left: 130px;
-    
 }
+
 .social-footer {
-    width: 150px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .social-footer ul {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
 }
 
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 50px;
+    background-color: #81b3d2;
+}
+
 .academy-footer {
+    display: flex;
+    align-items: center;
     width: 200px;
     margin: 0px;
-    margin-left: auto;
 }
 
 
