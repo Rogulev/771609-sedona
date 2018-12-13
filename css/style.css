@@ -32,18 +32,6 @@ body {
     height: 1px;
 }
 
-.hidden {
-    position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-}
 
 .main-heder {
     position: relative;
@@ -376,26 +364,31 @@ a {
 
 .main-footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     height: 120px;
     padding: 0;
-    background-color: rgba(0, 255, 0, 0.9);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 
 .visit {
     display: flex;
+    justify-content: center;
+    width: 240px;
     align-items: center;
-    
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     margin: 0px;
+    margin-left: 73px;
 }
 
 .social-footer {
     display: flex;
-    margin: 0;
+    width: 400px;
+    margin: 0 auto;
     padding: 0;
     align-items: center;
 }
@@ -420,19 +413,43 @@ a {
     background-color: #81b3d2;
 }
 
-.academy-footer {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    margin: 0px;
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
 }
 
+
+.social-button:active {
+    background-color: #5496bd;
+}
+
+.social-button:active path{
+    fill: #88b6d1;
+}
+
+.academy-footer {
+    display: flex;
+    width: 240px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-right: 73px;
+}
+
+
+.website {
+    padding-right: 5px;
+}
 
 #logo_name:hover,
 #logo_name:focus {
     fill: #5496bd;
    }
 
+.academy-footer>a {
+    height: 40px;
+}   
 
 .hotel {
     display: flex;
