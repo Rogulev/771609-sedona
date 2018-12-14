@@ -20,6 +20,7 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right:auto;
+    box-shadow: 0 0 15px 0 #dbdbdb;
      
 }
 
@@ -456,15 +457,18 @@ a {
     flex-wrap: wrap;
 }
 
+.img-hotel {
+    height: 150px;
+}
+
 .information {
     display: flex;
     flex-direction: column;
-}
-
-
-.information>p {
+    height: 150px;
     width: 260px;
+    margin-right: auto;
 }
+
 
 .name-hotel {
     margin:0;
@@ -474,20 +478,41 @@ a {
 }
 
 .description {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
     margin: 0px;
     padding: 0px;
 
 }
 
-.button-hotel {
-    margin-bottom: 0px;
-    margin-top:auto;
-    padding-bottom: 30px;
-    padding-top: auto;
+.house-type {
+    width: 110px;
+    
+}
+
+.price {
+    margin-left: 6px;
+    width: 140px;
     
 
 }
 
+.button-hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top:auto;
+    padding-bottom: 30px;
+    padding-top: auto;
+    height: 30px;
+}
+
+.button-info {
+   padding-right: 16px;
+   padding-left: 16px;
+}
 
 .hotel-block {
     background-color: #ffffff; 
@@ -548,19 +573,42 @@ a {
 
 .rating {
     background-color: #f2f2f2;
+    color: #666666;
+    padding: 3px 14px;
+    
 }
 
-.star {
+/*.star {
     background-image: url("../img/icon/star.svg");
     background-repeat: no-repeat;
     width: 20px;
     height: 20px; 
     display: block;
-} /*загвоздка с расстоянием между звездами и их количеством */
+} загвоздка с расстоянием между звездами и их количеством */
 
+.star-four {
+    background-image: url("../img/icon/star.svg");
+    height: 17px; 
+    width: 87px;
+    display: block;
+    background-repeat: space;
+}
 
+.star-three{
+    background-image: url("../img/icon/star.svg");
+    height: 17px; 
+    width: 65px;
+    display: block;
+    background-repeat: space;
+}
 
-
+.star-two{
+    background-image: url("../img/icon/star.svg");
+    height: 17px; 
+    width: 43px;
+    display: block;
+    background-repeat: space;
+}
 
 .logo-academy {
     fill: #000000;
@@ -600,9 +648,8 @@ a {
 
 
 .grade {
-    margin-right: 73px;
-    margin-left: auto;
     margin-top: 30px;
+    margin-right: 73px;
     margin-bottom: 30px;
     padding-right: 0;
     padding-left: 0; 
@@ -616,17 +663,5 @@ a {
     margin-left: auto;
     margin-bottom: 45px;
     padding-bottom: 0;
-}
-
-.rating {
-    margin:auto;
-    margin-bottom: 0;
-    padding-bottom: 0;     
-}
-
-.more {
-    height: 25px;
-    padding: 0px;
-    margin: 0px;
 }
 
