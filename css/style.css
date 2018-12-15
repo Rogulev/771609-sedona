@@ -18,6 +18,7 @@ body {
 
 .wrapper {
     width: 1200px;
+    
     margin-left: auto;
     margin-right:auto;
     box-shadow: 0 0 15px 0 #dbdbdb;
@@ -217,6 +218,14 @@ a {
     color: #ffffff;
 }
 
+.pop-up-search {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-left: 315px;
+    margin-right: 315px;
+}
+
 .search .search-hotel:hover,
 .search .search-hotel:focus {
     background-color: #604e43;
@@ -304,9 +313,8 @@ a {
 
 .people {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    width: 230px;
     height: 40px;
     margin-top: 0px;
     margin-bottom: 50px;
@@ -322,9 +330,15 @@ a {
     background-color: #f2f2f2;
 }
 
+.adult>label {
+    padding-right: 40px;
+}
 
-.plus,
-.minus {
+.children>label {
+    padding-right: 27px;
+}
+
+.math{
     display: block;
     width: 40px;
     height: 40px;
@@ -334,11 +348,16 @@ a {
     color: #a9a9a9;
     border: none;
     padding: 0px;
-    
-
 }
 
 
+.math:hover {
+    color: #000000;
+}
+
+.math:active {
+    color: #81b3d2;
+}
 
 .blue-button {
     width: 460px;
@@ -362,41 +381,52 @@ a {
     background-color: #5496bd;
     color: #88b6d1;
 }
+.maps {
+    position: relative;
+}
+
+.footer {
+    position: relative;
+}
 
 .main-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1200px;
     height: 120px;
     padding: 0;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.footer>.main-footer {
+    position: absolute;
+    bottom: 0;
+}
 
 .visit {
     display: flex;
     justify-content: center;
-    width: 240px;
+    width: 400px;
     align-items: center;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     margin: 0px;
-    margin-left: 73px;
+    
 }
 
 .social-footer {
     display: flex;
     width: 400px;
-    margin: 0 auto;
+    
     padding: 0;
     align-items: center;
 }
 
 .social-footer ul {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
     width: 150px;
     margin: 0 auto;
@@ -404,13 +434,16 @@ a {
     list-style: none;
 }
 
+.social-footer>li:nth-child(2n) {
+    
+}
 
 .social-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 50px;
+    width: 46px;
+    height: 48px;
     background-color: #81b3d2;
 }
 
@@ -430,12 +463,12 @@ a {
 
 .academy-footer {
     display: flex;
-    width: 240px;
+    width: 400px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0px;
-    margin-right: 73px;
+   
 }
 
 
