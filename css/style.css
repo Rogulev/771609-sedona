@@ -635,6 +635,24 @@ a {
     box-sizing: border-box;
 }
 
+
+.sort {
+    color: #cacaca;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort:hover {
+    color: #81b3d2;
+}
+
+.sort:active {
+    color: #231f20;
+}
+
+.sort-activ {
+    color: #81b3d2;
+}
+
 .found-sort ul {
     margin: 0;
     padding-left: 45px; 
@@ -663,10 +681,34 @@ a {
     list-style: none;
     display: flex;
     margin: 0;
+    height: 87px;
     justify-content: flex-end;
     align-content: center;
     align-items: center;
 }
+
+.found-arrow  li:nth-child(1) {
+    margin-right: 13px;
+}
+
+.found-arrow  li:nth-child(1) path {
+    fill: #cacaca;
+}
+
+.found-arrow  li:nth-child(2) path{
+    fill: #81b3d2;
+}
+
+.found-arrow  li:nth-child(1) path:hover {
+    fill: #231f20;
+}
+
+
+.found-arrow  li:nth-child(1) path:active,
+.found-arrow  li:nth-child(2) path:active {
+    fill: #81b3d2;
+}
+
 
 .hotel {
     display: flex;
