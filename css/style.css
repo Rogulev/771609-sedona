@@ -600,12 +600,21 @@ a {
     height: 40px;
 }   
 
-.filter {
-    display: flex;
-    flex-direction: column;
+.filter-section {
+    width: 1200px;
+    min-height: 217px;
+    background-image: url("../img/background/filter-background2.jpg");
+    background-position: center;
 }
 
+.filter {
+    display: flex;
+    flex-direction: row;
+}
 
+.filter-infra {
+    display: block;
+}
 
 .found {
     display: flex;
