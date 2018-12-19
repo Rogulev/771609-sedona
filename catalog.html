@@ -26,47 +26,38 @@
     </header>
 
     <main>
-      <section>
-        <form action="" method="get" class="">
-        <div>
-          <fieldset>
-            <legend>Инфраструктура</legend>
-            <label>
-              <input type="checkbox" class="visually-hidden" name="pool" checked>
-              Бассейн
-              <span></span>
-            </label>
-            <label>
-              <input type="checkbox" class="visually-hidden"name="parking">
-              Парковка
-              <span></span>
-            </label>
-            <label>
-              <input type="checkbox" class="visually-hidden" name="wifi">
-              Wi-fi
-              <span></span>
-            </label>
+      <section class="filter-section">
+        <form action="" method="get" class="filter">
+        <div class="filter-block-infra">
+          <fieldset  class="filter-infra">
+          <legend>Инфраструктура:</legend>
+            <p><input type="checkbox" id="filter-pool" class="visually-hidden filter-input-checkbox" name="pool" checked>
+              <label for="filter-pool"><span>Бассейн</span></label>
+            </p>
+            <p><input type="checkbox" id="filter-parking" class="visually-hidden filter-input-checkbox"name="parking">
+              <label for="filter-parking">Парковка</label>
+            </p>
+            <p><input type="checkbox" id="filter-wifi" class="visually-hidden filter-input-checkbox" name="wifi">
+              <label for="filter-wifi">Wi-fi</label>
+            </p>
           </fieldset>
         </div>
 
-        <div>  
-          <fieldset>
-            <legend>Тип жилья</legend>
-            <label>
+        <div class="filter-block-hous">  
+          <fieldset class="filter-hous">
+            <legend>Тип жилья:</legend>
+            <p><label>
               <input type="checkbox" class="visually-hidden" name=" hotel" checked>
               Гостиница
-              <span></span>
-            </label>
-            <label>
+            </label></p>
+            <p><label>
               <input type="checkbox" class="visually-hidden" name="Motel" checked>
               Мотель
-              <span></span>
-            </label>
-            <label>
+            </label></p>
+            <p><label>
               <input type="checkbox" class="visually-hidden" name="Apartment" checked>
               Апартаменты
-              <span></span>
-            </label>
+            </label></p>
           </fieldset>
         </div>  
           

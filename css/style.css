@@ -600,10 +600,68 @@ a {
     height: 40px;
 }   
 
+.filter-section {
+    width: 1200px;
+    min-height: 217px;
+    background-image: url("../img/background/filter-background2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .filter {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 217px;
 }
+
+.filter-block-infra {
+    padding-top: 30px;
+    padding-left: 73px;
+}
+
+.filter-infra {
+    width: 240px;
+    height: auto;
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    margin: 0;
+    
+}
+
+.filter-infra legend {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+
+.filter-infra p {
+    line-height: 21px;
+    margin: 0;
+    height: 23px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.filter-infra  label {
+    position: relative;
+}
+
+.filter-input-checkbox:checked   + label>span::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    left: -50px;
+    
+    /*border: 2px solid #ffffff;
+    border-radius: 5px;*/
+    background-image: url("../img/icon/checkbox-on.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 
 
 
