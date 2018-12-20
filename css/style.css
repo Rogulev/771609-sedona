@@ -600,8 +600,12 @@ a {
 }   
 
 .filter-section {
-    width: 1200px;
-    min-height: 217px;
+    width: 1056px;
+    min-height: 160px;
+    padding-top: 27px;
+    padding-right: 72px;
+    padding-bottom: 30px;
+    padding-left: 72px; 
     background-image: url("../img/background/filter-background2.jpg");
     background-position: center;
 }
@@ -609,22 +613,24 @@ a {
 .filter {
     display: flex;
     flex-direction: row;
-    height: 217px;
+   /* width: 1056px;
+    height: 160px;*/
 }
 
 fieldset label {
     display: block;
     position: relative;}
 
+    /*
 .filter-block-infra {
     padding-top: 27px;
     padding-left: 73px;
 }
-
+*/
 .filter-infra {
     display: block;
     width: 240px;
-    height: 156px;
+    height: 160px;
     padding: 0;
     color: #ffffff;
     border: none;
@@ -633,7 +639,7 @@ fieldset label {
 
 .filter-hous {
     width: 500px;
-    height: 156px;
+    height: 160px;
     padding: 0;
     color: #ffffff;
     border: none;
@@ -641,7 +647,6 @@ fieldset label {
 }
 
 .filter-block-hous {
-    padding-top: 27px; 
     padding-left: 15px;
     box-sizing: border-box;
     width: 500px;
@@ -660,16 +665,28 @@ fieldset label {
     line-height: 21px;
     margin: 0;
     height: 23px;
-    margin-bottom: 20px;
-   padding: 0;
+    margin-bottom: 22px;
+    padding-left: 27px;
+}
+
+
+.filter-infra span {
+    padding-left: 12px;
+}
+
+.filter-hous span {
+    padding-left: 15px;
 }
 
 .filter label {
     position: relative;
-    
 }
 
-.filter-input-checkbox:checked + label::before{
+input[type="checkbox"] {
+    position: absolute;
+}
+
+.filter-input-checkbox:checked + label>span::before{
     position: absolute;
     content: "";
     display: block;
@@ -681,7 +698,7 @@ fieldset label {
     background-repeat: no-repeat;
 }
 
-.filter-input-checkbox + label:before {
+.filter-input-checkbox + label>span::before {
     position: absolute;
     content: "";
     display: block;
@@ -718,8 +735,8 @@ fieldset label {
     font-size: 12px;
     line-height: 18px;
     width: 810px;
-    height: 87px;
-    padding-left: 32px;
+    height: 86px;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 
@@ -743,7 +760,7 @@ fieldset label {
 
 .found-sort ul {
     margin: 0;
-    padding-left: 45px; 
+    padding-left: 40px; 
 }
 
 .found-sort li {
@@ -811,14 +828,14 @@ fieldset label {
     display: flex;
     flex-direction: column;
     height: 150px;
-    width: 260px;
+    width: 258px;
     margin-right: auto;
 }
 
 
 .name-hotel {
     margin:0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     padding-top: 25px;
     padding-bottom: 0px;
 }
@@ -826,7 +843,7 @@ fieldset label {
 .description {
     display: flex;
     justify-content: space-between;
-    width: 260px;
+    width: 258px;
     margin: 0px;
     padding: 0px;
 
@@ -851,13 +868,13 @@ fieldset label {
     margin-bottom: 0px;
     margin-top:auto;
     padding-bottom: 30px;
-    padding-top: auto;
-    height: 30px;
+    height: 27px;
 }
 
 .button-info {
    padding-right: 16px;
    padding-left: 16px;
+   
 }
 
 .hotel-block {
@@ -883,6 +900,8 @@ fieldset label {
 
 .hotel-block .more {
     font-weight: bold;
+    width: 110px;
+    box-sizing: border-box;
     color:white;
     background-color: #81b3d2;
 }
@@ -902,6 +921,8 @@ fieldset label {
 
 .hotel-block .reserve {
     font-weight: bold;
+    width: 141px;
+    box-sizing: border-box;
     color:white;
     background-color: #766357;
 }
@@ -921,7 +942,6 @@ fieldset label {
     background-color: #f2f2f2;
     color: #666666;
     padding: 3px 14px;
-    
 }
 
 /*.star {
@@ -988,7 +1008,7 @@ fieldset label {
 
 
 .hotel-img {
-    padding: 30px 32px 30px 73px;
+    padding: 30px 30px 30px 73px;
 }
 
 
