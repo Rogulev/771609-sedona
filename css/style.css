@@ -36,7 +36,6 @@ body {
     height: 1px;
 }
 
-
 .main-heder {
     position: relative;
     align-items: center;
@@ -613,56 +612,86 @@ a {
     height: 217px;
 }
 
+fieldset label {
+    display: block;
+    position: relative;}
+
 .filter-block-infra {
-    padding-top: 30px;
+    padding-top: 27px;
     padding-left: 73px;
 }
 
 .filter-infra {
+    display: block;
     width: 240px;
-    height: auto;
+    height: 156px;
     padding: 0;
     color: #ffffff;
     border: none;
     margin: 0;
-    
 }
 
-.filter-infra legend {
+.filter-hous {
+    width: 500px;
+    height: 156px;
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    margin: 0;
+}
+
+.filter-block-hous {
+    padding-top: 27px; 
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.filter-infra legend,
+.filter-hous legend {
     font-size: 16px;
     font-weight: bold;
     line-height: 21px;
     margin-bottom: 25px;
 }
 
-.filter-infra p {
+.filter-infra p,
+.filter-hous p {
     line-height: 21px;
     margin: 0;
     height: 23px;
     margin-bottom: 20px;
-    padding-left: 25px;
+   padding: 0;
 }
 
-.filter-infra  label {
+.filter label {
     position: relative;
+    
 }
 
-.filter-input-checkbox:checked   + label>span::before {
+.filter-input-checkbox:checked + label::before{
     position: absolute;
     content: "";
+    display: block;
     width: 27px;
     height: 27px;
-    left: -50px;
-    
-    /*border: 2px solid #ffffff;
-    border-radius: 5px;*/
+    left: -27px;
+    top: 0;
     background-image: url("../img/icon/checkbox-on.svg");
     background-repeat: no-repeat;
-    z-index: 1;
 }
 
-
-
+.filter-input-checkbox + label:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    left: -27px;
+    top: 0;
+    background-image: url("../img/icon/checkbox-off.svg");
+    background-repeat: no-repeat;   
+}
 
 .found {
     display: flex;
