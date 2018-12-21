@@ -613,20 +613,12 @@ a {
 .filter {
     display: flex;
     flex-direction: row;
-   /* width: 1056px;
-    height: 160px;*/
 }
 
 fieldset label {
     display: block;
     position: relative;}
 
-    /*
-.filter-block-infra {
-    padding-top: 27px;
-    padding-left: 73px;
-}
-*/
 .filter-infra {
     display: block;
     width: 240px;
@@ -638,7 +630,7 @@ fieldset label {
 }
 
 .filter-hous {
-    width: 500px;
+    width: 480px;
     height: 160px;
     padding: 0;
     color: #ffffff;
@@ -647,9 +639,9 @@ fieldset label {
 }
 
 .filter-block-hous {
-    padding-left: 15px;
+    padding-left: 14px;
     box-sizing: border-box;
-    width: 500px;
+    width: 497px;
 }
 
 .filter-infra legend,
@@ -710,6 +702,8 @@ input[type="checkbox"] {
     background-repeat: no-repeat;   
 }
 
+
+
 .found {
     display: flex;
     align-items: center;
@@ -739,6 +733,149 @@ input[type="checkbox"] {
     padding-left: 30px;
     box-sizing: border-box;
 }
+
+.filter-range {
+    width: 320px;
+    height: 160px;
+    color: #ffffff; 
+    border: none;
+}
+
+.filter-range fieldset {
+    height: 160px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.filter-range legend {
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.price-controls {
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+  
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+  }
+
+.min-price,
+.max-price {
+    height: 32px;
+}
+
+.min-price input,
+.max-price input {
+    height: 32px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+  }
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+  }
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+     cursor: pointer;
+  }
+
+.filter-range input[type="submit"]{
+    display: block;
+    width: 137px;
+    height: 36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 32px 30% 0 auto;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+    
+.filter-range input[type="submit"]:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+
+.range-toggle-min {
+    left: 0;
+  }
+  
+.range-toggle-max {
+    left: 80%;
+  }
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+
+    line-height: 32px;
+
+    vertical-align: top;
+    font-weight: 400;
+    padding-left: 62px;
+    width: 93px;
+    cursor: pointer;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    padding-left: 5px;
+  
+    background: none;
+    border: none;
+  }
+
 
 
 .sort {
