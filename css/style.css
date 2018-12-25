@@ -70,9 +70,9 @@ a {
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-left: 0;        
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     line-height: 26px;
     font-weight: bold;
     list-style: none;
@@ -137,7 +137,7 @@ a {
 .poster::before{
     background-image: url("../img/icon/polygon.png");
     background-repeat: no-repeat; 
-    background-size: 100.5%;
+    background-size: 100.1%;
     display: block;
     content: "";
     width: 1200px;
@@ -239,27 +239,27 @@ a {
 
 .benefit-list li p {
     line-height: 21px;
-    margin-top: 25px;
+    margin-top: 24px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 0;
 }
 
-.benefit-list li:nth-child(1){
+.benefit-list li:nth-child(1) {
     background-image: url("../img/background/home.svg");
     background-repeat: no-repeat;
     background-position-x: 162px;
-    background-position-y: 60px;
-}
-
-.benefit-list li:nth-child(2){
-    background-image: url("../img/background/food.svg");
-    background-repeat: no-repeat;
-    background-position-x: 163px;
     background-position-y: 61px;
 }
 
-.benefit-list li:nth-child(3){
+.benefit-list li:nth-child(2) {
+    background-image: url("../img/background/food.svg");
+    background-repeat: no-repeat;
+    background-position-x: 163px;
+    background-position-y: 62px;
+}
+
+.benefit-list li:nth-child(3) {
     background-image: url("../img/background/souvenir.svg");
     background-repeat: no-repeat;
     background-position-x: 168px;
