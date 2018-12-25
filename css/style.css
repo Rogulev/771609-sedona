@@ -5,19 +5,17 @@ body {
     margin-left: auto;
     margin-right:auto;
     letter-spacing: .05px;
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     color: #000000;
     text-transform: uppercase;
-    
     background-color: #f2f2f2;
 }
 
 .wrapper {
     width: 1200px;
-    
     margin-left: auto;
     margin-right:auto;
     box-shadow: 0 0 15px 0 #dbdbdb;
@@ -36,7 +34,7 @@ body {
     position: relative;
     align-items: center;
     margin-bottom: 0;
-    min-height: 57px;
+    min-height: 56px;
 }
 
 a {
@@ -56,7 +54,7 @@ a {
     margin: 0 auto;
 }
 
-.main-logo a{
+.main-logo a {
     display: block;
     width: 138px;
     height: 70px;
@@ -87,16 +85,16 @@ a {
 }
 
 .main-navigation li:nth-child(4n) {
-    margin-right: 6%;
+    margin-right: 71px;
     text-align: right;
 }
 
   .main-navigation li:nth-child(4n+1) {
-    margin-left: 6%;
+    margin-left: 71px;
 }
 
   .main-navigation li:nth-child(4n+3) {
-    margin-left: 8%;
+    margin-left: 96px;
     text-align: right;
 }
 
@@ -125,7 +123,6 @@ a {
     width: 1200px;
     height: 508px;
     position: relative;
-    
 }
 
 .poster {
@@ -134,7 +131,7 @@ a {
     text-align: center;
 }
 
-.poster::before{
+.poster::before {
     background-image: url("../img/icon/polygon.png");
     background-repeat: no-repeat; 
     background-size: 100.1%;
@@ -148,7 +145,7 @@ a {
 
 .advantages {
     margin: 0;
-    padding-top:60px;
+    padding-top:61px;
     padding-bottom: 50px;
     background-color: #ffffff;
     text-align: center;
@@ -163,7 +160,7 @@ a {
     margin-bottom: 27px;
 }
 
-.advantages>p {
+.advantages p {
     margin: 0;
 }
 
@@ -295,7 +292,7 @@ a {
 .search h2 {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 55px;
+    margin-top: 57px;
     margin-bottom: 30px;
     padding: 0;
 }
@@ -353,7 +350,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     background-color: #ffffff;
     width: 570px;
     box-sizing: border-box;
@@ -455,7 +451,7 @@ a {
     padding-right: 27px;
 }
 
-.math{
+.math {
     display: block;
     width: 38px;
     height: 38px;
@@ -490,13 +486,13 @@ a {
 .blue-button:hover,
 .blue-button:focus {
     background-color: #669ec0;
-    
 }
 
 .blue-button:active {
     background-color: #5496bd;
     color: #88b6d1;
 }
+
 .maps {
     position: relative;
     z-index: -1;
@@ -537,17 +533,15 @@ a {
 .social-footer {
     display: flex;
     width: 400px;
-    
     padding: 0;
     align-items: center;
 }
 
 .social-footer ul {
     display: flex;
-    
     justify-content: space-between;
     width: 150px;
-    margin: 0 auto;
+    margin: 0 auto 0 124px;
     padding: 0;
     list-style: none;
 }
@@ -581,11 +575,11 @@ a {
     align-items: center;
     justify-content: center;
     margin: 0;
-   
 }
 
 .website {
     padding-right: 8px;
+    margin-top: 11px;
 }
 
 #logo_name:hover,
@@ -593,8 +587,8 @@ a {
     fill: #5496bd;
    }
 
-.academy-footer>a {
-    height: 40px;
+.academy-footer a {
+    height: 44px;
 }   
 
 .filter-section {
@@ -613,12 +607,9 @@ a {
     flex-direction: row;
 }
 
-fieldset label {
-    display: block;
-    position: relative;}
-
 .filter-infra {
     display: block;
+    position: relative;
     width: 240px;
     height: 160px;
     padding: 0;
@@ -628,6 +619,8 @@ fieldset label {
 }
 
 .filter-hous {
+    display: block;
+    position: relative;
     width: 480px;
     height: 160px;
     padding: 0;
@@ -655,7 +648,7 @@ fieldset label {
     line-height: 21px;
     margin: 0;
     height: 23px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     padding-left: 27px;
 }
 
@@ -675,26 +668,26 @@ input[type="checkbox"] {
     position: absolute;
 }
 
-.filter-input-checkbox:checked + label>span::before{
+.filter-input-checkbox:checked + label span::before {
     position: absolute;
     content: "";
     display: block;
     width: 27px;
     height: 27px;
-    left: -27px;
-    top: 0;
+    left: -26px;
+    top: -2px;
     background-image: url("../img/icon/checkbox-on.svg");
     background-repeat: no-repeat;
 }
 
-.filter-input-checkbox + label>span::before {
+.filter-input-checkbox + label span::before {
     position: absolute;
     content: "";
     display: block;
     width: 27px;
     height: 27px;
-    left: -27px;
-    top: 0;
+    left: -26px;
+    top: -2px;
     background-image: url("../img/icon/checkbox-off.svg");
     background-repeat: no-repeat;   
 }
@@ -702,7 +695,8 @@ input[type="checkbox"] {
 .found {
     display: flex;
     align-items: center;
-    height: 87px;
+    box-sizing: content-box;
+    height: 86px;
     padding-left: 72px;
     padding-right: 72px;
     margin-bottom: 1px;
@@ -711,7 +705,7 @@ input[type="checkbox"] {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.fount-result  {
+.fount-result {
     width: 135px;
     font-size: 21px;
     line-height: 26px;
@@ -725,26 +719,31 @@ input[type="checkbox"] {
     line-height: 18px;
     width: 810px;
     height: 86px;
-    padding-left: 30px;
+    padding-top: 4px; 
+    padding-left: 29px;
     box-sizing: border-box;
 }
 
-.filter-range {
+.filter-block-range {
     width: 320px;
     height: 160px;
     color: #ffffff; 
     border: none;
 }
 
-.filter-range fieldset {
+.filter-range {
+    display: block;
+    position: relative;
     height: 160px;
+    width: 317px;
     padding: 0;
-    margin: 0;
+    margin-left: 2px;
     border: none;
 }
 
 .filter-range legend {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
+    margin-left: 1px;
     font-size: 16px;
     font-weight: bold;
     line-height: 21px;
@@ -765,13 +764,11 @@ input[type="checkbox"] {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 2px;
     height: 22px;
-  
     transform: translate(-50%, -50%);
     background: #ffffff;
-  }
+}
 
 .min-price,
 .max-price {
@@ -785,21 +782,25 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
+.price-controls .max-price {
+        padding-left: 55px;
+}
+
 .range-controls {
     position: relative;
     margin-bottom: 32px;
-  }
+}
 
 .range-controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
-  }
+}
 
 .range-controls .bar {
     width: 80%;
     height: 2px;
     background: #ffffff;
-  }
+}
 
 .range-toggle {
     position: absolute;
@@ -811,9 +812,9 @@ input[type="checkbox"] {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-  }
+}
 
-.filter-range input[type="submit"]{
+.filter-range input[type="submit"] {
     display: block;
     width: 137px;
     height: 36px;
@@ -851,13 +852,11 @@ input[type="checkbox"] {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-
     line-height: 32px;
-
     vertical-align: top;
     font-weight: 400;
-    padding-left: 62px;
-    width: 93px;
+    padding-left: 64px;
+    width: 92px;
     cursor: pointer;
 }
 
@@ -866,8 +865,7 @@ input[type="checkbox"] {
     margin: 0;
     color: inherit;
     font: inherit;
-    padding-left: 5px;
-  
+    padding-left: 4px;
     background: none;
     border: none;
   }
@@ -891,7 +889,7 @@ input[type="checkbox"] {
 
 .found-sort ul {
     margin: 0;
-    padding-left: 40px; 
+    padding-left: 39px; 
 }
 
 .found-sort li {
@@ -900,7 +898,7 @@ input[type="checkbox"] {
 }
 
 .found-sort li:nth-child(2n) {
-    padding-left: 30px;   
+    padding-left: 29px;   
 }
 
 .found-sort li:nth-child(3n) {
@@ -908,18 +906,22 @@ input[type="checkbox"] {
 }
 
 .found-arrow {
-    height: 87px;
+    margin: auto;
+   margin-top: 35px;
+    height: 20px;
     width: 110px;
 }
 
 .found-arrow ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    height: 87px;
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 110px;
 }
 
 .found-arrow  li:nth-child(1) {
@@ -962,7 +964,7 @@ input[type="checkbox"] {
 
 .name-hotel {
     margin:0;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     padding-top: 25px;
     padding-bottom: 0;
 }
@@ -981,7 +983,7 @@ input[type="checkbox"] {
 
 .price {
     margin-left: 6px;
-    width: 140px;
+    width: 142px;
 }
 
 .button-hotel {
@@ -1023,13 +1025,14 @@ input[type="checkbox"] {
 .hotel-block .more {
     font-weight: bold;
     width: 110px;
+    height: 27px;
     box-sizing: border-box;
     color:white;
     background-color: #81b3d2;
 }
 
 .hotel-block .more:hover,
-.hotel-block .more:focus  {
+.hotel-block .more:focus {
     background-color: #669ec0;
     color: #ffffff;
 }
@@ -1043,7 +1046,8 @@ input[type="checkbox"] {
 
 .hotel-block .reserve {
     font-weight: bold;
-    width: 141px;
+    width: 142px;
+    height: 27px;   
     box-sizing: border-box;
     color:white;
     background-color: #766357;
@@ -1063,7 +1067,13 @@ input[type="checkbox"] {
 .rating {
     background-color: #f2f2f2;
     color: #666666;
-    padding: 3px 14px;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    width: 111px;
+    height: 28px;
+    box-sizing: border-box;
 }
 
 .star-four {
@@ -1074,7 +1084,7 @@ input[type="checkbox"] {
     background-repeat: space;
 }
 
-.star-three{
+.star-three {
     background-image: url("../img/icon/star.svg");
     height: 17px; 
     width: 65px;
@@ -1082,10 +1092,10 @@ input[type="checkbox"] {
     background-repeat: space;
 }
 
-.star-two{
+.star-two {
     background-image: url("../img/icon/star.svg");
     height: 17px; 
-    width: 43px;
+    width: 41px;
     display: block;
     background-repeat: space;
 }
@@ -1093,6 +1103,7 @@ input[type="checkbox"] {
 .logo-academy {
     fill: #000000;
 }
+
 .logo-academy:hover,
 .logo-academy:focus {
     fill: #81b3d2;
@@ -1118,11 +1129,11 @@ input[type="checkbox"] {
 }
 
 .hotel-img {
-    padding: 30px 30px 30px 73px;
+    padding: 30px 30px 30px 72px;
 }
 
 .grade {
-    margin-top: 30px;
+    margin-top: 29px;
     margin-right: 73px;
     margin-bottom: 30px;
     padding-right: 0;
@@ -1135,6 +1146,6 @@ input[type="checkbox"] {
     margin-top: 0;
     margin-right: 0;
     margin-left: auto;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     padding-bottom: 0;
 }
