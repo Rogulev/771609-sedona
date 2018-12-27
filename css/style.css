@@ -188,6 +188,7 @@ a {
             box-sizing: border-box;
     width: 1200px;
     min-height: 256px;
+    align-items: flex-start;
 }
 
 .feature-text {
@@ -206,15 +207,20 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 400px;
+    flex-grow: 1;
     min-height: 256px;
     padding-top: 47px;
     padding-right: 48px;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     padding-left: 48px; 
     background-color: #81b3d2;
     color: #ffffff;
     line-height: 21px;
     font-size: 14px;
+}
+
+.feature-img {
+    max-height: 256px;
 }
 
 .feature-text  h2 {
@@ -231,7 +237,7 @@ a {
 
 .feature-text  p {
     margin-top: 0;
-    width: 300px;
+    width: 305px;
 }
 
 .benefit-list {
@@ -250,6 +256,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    flex-grow: 1;
     text-align: center;
     box-sizing: border-box;
     width: 400px;
@@ -293,8 +300,12 @@ a {
 }
 
 .feature-list {
-    text-align: center;
     display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
     width: 1200px;
     min-height: 256px;
     box-sizing: border-box;
@@ -403,7 +414,7 @@ a {
 
 .check-input {
     box-sizing:border-box;
-    width: 350px;
+    width: 347px;
     height: 38px;
     margin-left: 10px;
     padding-left: 10px;
@@ -534,12 +545,12 @@ a {
     flex-direction: row;
     justify-content: space-between;
     width: 1200px;
-    height: 120px;
+    min-height: 120px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.footer>.main-footer {
+.footer .main-footer {
     position: absolute;
     bottom: 0;
 }
@@ -565,11 +576,17 @@ a {
 
 .social-footer ul {
     display: flex;
-    justify-content: space-between;
-    width: 150px;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 auto 0 124px;
     padding: 0;
     list-style: none;
+}
+
+.social-footer li {
+    margin-right: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .social-button {
@@ -617,7 +634,7 @@ a {
     min-height: 160px;
     padding-top: 27px;
     padding-right: 72px;
-    padding-bottom: 30px;
+    padding-bottom: 6px;
     padding-left: 72px; 
     background-image: url("../img/background/filter-background2.jpg");
     background-position: center;
@@ -633,7 +650,7 @@ a {
     display: block;
     position: relative;
     width: 240px;
-    height: 160px;
+    min-height: 160px;
     padding: 0;
     color: #ffffff;
     border: none;
@@ -644,7 +661,7 @@ a {
     display: block;
     position: relative;
     width: 480px;
-    height: 160px;
+    min-height: 160px;
     padding: 0;
     color: #ffffff;
     border: none;
@@ -969,10 +986,6 @@ input[type="checkbox"] {
     fill: #81b3d2;
 }
 
-.hotel {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .img-hotel {
     height: 150px;
@@ -981,7 +994,7 @@ input[type="checkbox"] {
 .information {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    min-height: 150px;
     width: 258px;
     margin-right: auto;
 }
@@ -991,6 +1004,7 @@ input[type="checkbox"] {
     margin-bottom: 4px;
     padding-top: 25px;
     padding-bottom: 0;
+    min-height: 26px;
 }
 
 .description {
@@ -1031,6 +1045,7 @@ input[type="checkbox"] {
 
 .hotel-block li {
     list-style: none;
+    min-height: 150px;
 }
 
 .hotel-block .link-hotel{
@@ -1148,7 +1163,7 @@ input[type="checkbox"] {
 .hotel {
     display: flex;
     justify-content: stretch;
-    height: 150px;
+    min-height: 150px;
     border-bottom: 1px solid #e5e5e5;
 }
 
