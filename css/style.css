@@ -18,7 +18,7 @@ body {
     width: 1200px;
     margin-left: auto;
     margin-right:auto;
-    box-shadow: 0 0 15px 0 #dbdbdb;
+    box-shadow: 0 0 15px 5px #dbdbdb;
 }
 
 .visually-hidden {
@@ -86,7 +86,7 @@ a {
     background-color: #ffffff;
 }
 
-.main-navigation ul>li {
+.main-navigation li {
     width: 20%;
     box-sizing: border-box;
 }
@@ -558,6 +558,7 @@ a {
 .visit {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     width: 400px;
     align-items: center;
@@ -613,10 +614,12 @@ a {
 
 .academy-footer {
     display: flex;
-    width: 400px;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 400px;
+    min-height: 120px;
     margin: 0;
 }
 
@@ -731,11 +734,18 @@ input[type="checkbox"] {
     background-repeat: no-repeat;   
 }
 
+
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:checked:disabled + label {
+    cursor: default;
+    opacity: 0.5;
+}
+
 .found {
     display: flex;
     align-items: center;
     box-sizing: content-box;
-    height: 86px;
+    min-height: 86px;
     padding-left: 72px;
     padding-right: 72px;
     margin-bottom: 1px;
@@ -757,7 +767,7 @@ input[type="checkbox"] {
     font-size: 12px;
     line-height: 18px;
     width: 810px;
-    height: 86px;
+    min-height: 86px;
     padding-top: 4px; 
     padding-left: 29px;
     box-sizing: border-box;
@@ -765,7 +775,7 @@ input[type="checkbox"] {
 
 .filter-block-range {
     width: 320px;
-    height: 160px;
+    min-height: 160px;
     color: #ffffff; 
     border: none;
 }
@@ -878,6 +888,7 @@ input[type="checkbox"] {
     background: #1c4f80;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
   
 .range-toggle-min {
@@ -1009,6 +1020,7 @@ input[type="checkbox"] {
 
 .description {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 258px;
     margin: 0;
@@ -1026,12 +1038,13 @@ input[type="checkbox"] {
 
 .button-hotel {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
     margin-top:auto;
     padding-bottom: 30px;
-    height: 27px;
+    min-height: 27px;
 }
 
 .button-info {
