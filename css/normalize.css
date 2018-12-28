@@ -211,6 +211,14 @@
     padding: 0;
   }
   
+  /**/
+  input::-ms-clear { display: none; }
+  ::-webkit-input-placeholder {color:#000000;}
+  ::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+  :-moz-placeholder           {color:#000000;}/* Firefox 18- */
+  :-ms-input-placeholder      {color:#000000;}
+  /**/
+
   /**
    * Restore the focus styles unset by the previous rule.
    */
@@ -348,11 +356,3 @@
   [hidden] {
     display: none;
   }
-
-
-  input::-ms-clear { display: none; }
-
-  ::-webkit-input-placeholder {color:#000000;}
-  ::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
-  :-moz-placeholder           {color:#000000;}/* Firefox 18- */
-  :-ms-input-placeholder      {color:#000000;}
